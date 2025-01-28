@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPTV Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>IPTV Player</h1>
+
+        <div id="file-input-section">
+            <label for="file-path">Enter the path to your playlist file:</label>
+            <input type="text" id="file-path" placeholder="/path/to/playlist.m3u" value="/home/abdeljabar/Downloads/sample.m3u">
+            <button id="validate-file">Load Playlist</button>
+        </div>
+
+        <div id="content">
+
+            <h2>Channels</h2>
+            <ul id="channel-list"></ul>
+
+            <h2>Series</h2>
+            <ul id="series-list"></ul>
+
+            <h2>Movies</h2>
+            <ul id="movie-list"></ul>
+
+        </div>
+    </div>
+
+    <script src="https://vjs.zencdn.net/7.21.1/video.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
